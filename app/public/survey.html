@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Friend Finder</title>
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+  <div class="container">
+    <div class="jumbotron">
+      <h1><span class="glyphicon glyphicon-user"></span>  Friend Finder</h1>
+      <h3>Answer a few basic questions.</h3>
+      <h3>Then find a friend with the best compatiblity.</h3>
+      <hr>
+      <a href="Home.html"><button type="button" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-home"></span>  Home</button></a>
+    </div>
+    <div class="row">
+
+      <div class="col-lg-12">
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title"><strong>Survey Questions</strong></h3>
+          </div>
+          <div class="panel-body">
+            <form method="POST" role="form">
+
+              <div class="form-group">
+                <label for="name">Name (Required)</label>
+                <input type="text" class="form-control" id="friend-name">
+              </div>
+
+              <div class="form-group">
+                <label for="photo-link">Link to Photo Image (Required)</label>
+                <input type="text" class="form-control" id="friend-photo">
+              </div>
+              <div class="wrapper", id="friend-survey">
+                <h3>Question 1</h3>
+                <h4>Do you enjoy being active outdoors.</h4>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" >
+                    Select an Option <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" id="question1">
+                    <li><a >5 (Strongly Agree)</a></li>
+                    <li><a >4</a></li>
+                    <li><a >3</a></li>
+                    <li><a >2</a></li>
+                    <li><a >1 (Strongly Disagree)</a></li>
+                  </ul>
+                </div>
+                <h3>Question 2</h3>
+                <h4>If you’re having a bad day, do you prefer to be left alone?</h4>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" >
+                    Select an Option <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" id = "question2">
+                    <li><a >5 (Strongly Agree)</a></li>
+                    <li><a >4</a></li>
+                    <li><a >3</a></li>
+                    <li><a >2</a></li>
+                    <li><a >1 (Strongly Disagree)</a></li>
+                  </ul>
+                </div>
+                <h3>Question 3</h3>
+                <h4>Would you be open to disclosing all of your health issues?</h4>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" >
+                    Select an Option <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" id = "question3">
+                    <li><a >5 (Strongly Agree)</a></li>
+                    <li><a >4</a></li>
+                    <li><a >3</a></li>
+                    <li><a >2</a></li>
+                    <li><a >1 (Strongly Disagree)</a></li>
+                  </ul>
+                </div>
+                <h3>Question 4</h3>
+                <h4>Would you feel insecure if I spent some time with friends?</h4>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" >
+                    Select an Option <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" id = "question4">
+                    <li><a >5 (Strongly Agree)</a></li>
+                    <li><a >4</a></li>
+                    <li><a >3</a></li>
+                    <li><a >2</a></li>
+                    <li><a >1 (Strongly Disagree)</a></li>
+                  </ul>
+                </div>
+                <h3>Question 5</h3>
+                <h4>Do you prefer beauty over brains?</h4>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" >
+                    Select an Option <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" id = "question5">
+                    <li><a >5 (Strongly Agree)</a></li>
+                    <li><a >4</a></li>
+                    <li><a >3</a></li>
+                    <li><a >2</a></li>
+                    <li><a >1 (Strongly Disagree)</a></li>
+                  </ul>
+                </div>
+                <h3>Question 6</h3>
+                <h4>Is it fine for a partner to use the toilet with the door open?</h4>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" >
+                    Select an Option <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" id ="question6">
+                    <li><a >5 (Strongly Agree)</a></li>
+                    <li><a >4</a></li>
+                    <li><a >3</a></li>
+                    <li><a >2</a></li>
+                    <li><a >1 (Strongly Disagree)</a></li>
+                  </ul>
+                </div>
+                <h3>Question 7</h3>
+                <h4>Can you avoid flirting if someone attractive flirts with you while in a relationship?</h4>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" >
+                    Select an Option <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" id = "question7">
+                    <li><a >5 (Strongly Agree)</a></li>
+                    <li><a >4</a></li>
+                    <li><a >3</a></li>
+                    <li><a >2</a></li>
+                    <li><a >1 (Strongly Disagree)</a></li>
+                  </ul>
+                </div>
+                <h3>Question 8</h3>
+                <h4>Do you think celebrating Valentine’s Day is corny?.</h4>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    Select an Option <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" id = "question8">
+                    <li><a >5 (Strongly Agree)</a></li>
+                    <li><a >4</a></li>
+                    <li><a >3</a></li>
+                    <li><a >2</a></li>
+                    <li><a >1 (Strongly Disagree)</a></li>
+                  </ul>
+                </div>
+                <h3>Question 9</h3>
+                <h4>Do you hold on to resentments?</h4>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    Select an Option <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" id = "question9">
+                   <li><a >5 (Strongly Agree)</a></li>
+                   <li><a >4</a></li>
+                   <li><a >3</a></li>
+                   <li><a >2</a></li>
+                   <li><a >1 (Strongly Disagree)</a></li>
+                 </ul>
+               </div>
+               <h3>Question 10</h3>
+               <h4>Are you open to new ways of looking at things even if they conflict with your own opinions?</h4>
+               <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                  Select an Option <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" id = "question10">
+                  <li><a >5 (Strongly Agree)</a></li>
+                  <li><a >4</a></li>
+                  <li><a >3</a></li>
+                  <li><a >2</a></li>
+                  <li><a >1 (Strongly Disagree)</a></li>
+                </ul>
+              </div>
+            </div>
+          </form>
+          <br>
+          <div class="text-right">
+            <button type="submit" class="btn btn-primary btn-lg btn-block" id="add-btn"><span class="glyphicon glyphicon-heart"></span>  Submit</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<footer style="text-align: center";><a href="localhost:8080/api/friends">Friend List API</a></footer>
+
+<!-- Modal popup for match -->
+<div class="modal fade" id = modal>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Best Match</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h2 id="friendName"></h2>
+        <img id="friendPhoto" class="materialboxed" width="650" src=" ">
+      </div>
+      <div class="modal-footer">
+       <!--  <button type="button" class="btn btn-primary">Save changes</button> -->
+       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+     </div>
+   </div>
+ </div>
+</div>
+
+<script type="text/javascript">
+
+  $(document).ready(function() {
+    $('select').material_select();
+    $('.modal').modal({
+      dismissible: false, 
+      opacity: .5, 
+      inDuration: 300, 
+      outDuration: 200, 
+      startingTop: '4%', 
+      endingTop: '10%' 
+    });
+  });
+
+  $(".submit").on("click", function(event){
+    event.preventDefault();
+
+    var newFriends ={
+      friendName: $("#friend-name").val().trim(),
+      friendPhoto: $("#friend-photo").val().trim(),
+      friendScore: [
+      $('#question1').val().trim(),
+      $('#question2').val().trim(),
+      $('#question3').val().trim(),
+      $('#question4').val().trim(),
+      $('#question5').val().trim(),
+      $('#question6').val().trim(),
+      $('#question7').val().trim(),
+      $('#question8').val().trim(),
+      $('#question9').val().trim(),
+      $('#question10').val().trim()
+      ]
+    }
+  });
+  
+  $.post("/api/friends", newFriends) 
+  .done(function(data){
+
+    $('#friendName').html(data.matchName);
+    $("#friendPhoto").attr("src", data.matchImage);
+
+    $('#modal').modal('open');
+
+
+
+  </script>
+
+</body>
+</html>
